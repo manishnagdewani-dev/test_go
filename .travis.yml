@@ -5,6 +5,6 @@ dist: jammy
 sudo: false
 group: stable
 stage: build
-before_install: go env -w GO111MODULE=off
+after_install: go mod init
 script: true
 language: go
